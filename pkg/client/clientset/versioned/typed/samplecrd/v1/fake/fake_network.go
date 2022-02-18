@@ -34,9 +34,9 @@ type FakeNetworks struct {
 	ns   string
 }
 
-var networksResource = schema.GroupVersionResource{Group: "samplecrd.k8s.io", Version: "v1", Resource: "networks"}
+var networksResource = schema.GroupVersionResource{Group: "samplecrd.k8s1.io", Version: "v1", Resource: "networks"}
 
-var networksKind = schema.GroupVersionKind{Group: "samplecrd.k8s.io", Version: "v1", Kind: "Network"}
+var networksKind = schema.GroupVersionKind{Group: "samplecrd.k8s1.io", Version: "v1", Kind: "Network"}
 
 // Get takes name of the network, and returns the corresponding network object, and an error if there is any.
 func (c *FakeNetworks) Get(name string, options v1.GetOptions) (result *samplecrdv1.Network, err error) {

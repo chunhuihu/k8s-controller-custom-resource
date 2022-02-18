@@ -30,7 +30,7 @@ type SamplecrdV1Interface interface {
 	NetworksGetter
 }
 
-// SamplecrdV1Client is used to interact with features provided by the samplecrd.k8s.io group.
+// SamplecrdV1Client is used to interact with features provided by the samplecrd.k8s1.io group.
 type SamplecrdV1Client struct {
 	restClient rest.Interface
 }
